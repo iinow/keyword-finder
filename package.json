@@ -1,0 +1,26 @@
+{
+  "name": "crawling-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bull-board/express": "^3.9.1",
+    "axios": "^0.25.0",
+    "bull": "^4.4.0",
+    "bullmq": "^1.67.3",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.2",
+    "object-hash": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/bull": "^3.15.7",
+    "@types/express": "^4.17.13",
+    "@types/object-hash": "^2.2.1"
+  }
+}
