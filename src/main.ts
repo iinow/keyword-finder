@@ -20,8 +20,8 @@ type ReqAdd = {
 const sleep = (t: number) => new Promise((resolve) => setTimeout(resolve, t * 1000));
 
 const redisOptions: ConnectionOptions = {
-  port: 6379,
-  host: 'localhost',
+  port: 6401,
+  host: '192.168.0.24',
   password: '',
 //   tls: false,
 };
@@ -46,7 +46,7 @@ async function setupBullMQProcessor(queueName: string) {
 
     console.log('res', findKeywords)
 
-    if (findKeywords.keywords.length === 0) {
+    if (findKeywords.keywords.length !== 0) {
       const res = await api().call(findKeywords.keywords)
       await job.log(`api call status code: ${res}, data: ${findKeywords.keywords}`);
     }
